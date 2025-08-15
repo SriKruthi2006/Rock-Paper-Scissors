@@ -11,14 +11,15 @@ h1{
     line-height: 5rem;
 }
 
-.choice{
-    height: 165px;
-    width: 165px;
+.choice {
+    height: 20vw;
+    width: 20vw;
+    max-width: 165px;
+    max-height: 165px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .choice:hover{
@@ -27,8 +28,8 @@ h1{
 }
 
 img{
-    height: 150px;
-    width: 150px;
+     height: 90%;
+    width: 90%;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -116,5 +117,33 @@ img{
     .social-icons a {
         font-size: 1.3rem;
         margin: 0 5px;
+    }
+}
+@media (max-width: 600px) {
+    .choices {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
     }
 }
